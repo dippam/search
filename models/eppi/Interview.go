@@ -1,18 +1,25 @@
 package main
 
 import "time"
+import "../place"
 
 type Interview struct {
-	Code          string    `json:"code"`
-	Summary       bool      `json:"summary"`
-	Duration      uint16    `json:"duration"`
-	Date          Date      `json:"date"`
-	AgeGroup      byte      `json:"ageGroup"`
-	Residence     byte      `json:"residence"`
-	Childhood     uint16    `json:"childhood"`
-	Birthplace    uint16    `json:"birthplace"`
-	Gender        byte      `json:"gender"`
-	Denomination  byte      `json:"denomination"`
+	AgeGroup     byte   `json:"ageGroup"`
+	Birthplace   Place  `json:"birthplace"`
+	Childhood    Place  `json:"childhood"`
+	Code         string `json:"code"`
+	Date         Date   `json:"date"`
+	Denomination byte   `json:"denomination"`
+	Duration     uint16 `json:"duration"`
+	Gender       byte   `json:"gender"`
+	Id           byte   `json:"id"`
+	Residence    Place  `json:"residence"`
+	Summary      string `json:"summary"`
 }
 
 type Interviews []Interview
+
+type Denomination struct {
+	Id   byte   `json:"id"`
+	Name string `json:"name"`
+}
