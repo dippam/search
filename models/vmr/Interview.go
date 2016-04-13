@@ -11,7 +11,7 @@ type Interview struct {
 	Code         string       `json:"code"`
 	Date         Date         `json:"date"`
 	Denomination Denomination `json:"denomination"`
-	Duration     uint16       `json:"duration"`
+	Duration     int          `json:"duration"`
 	Gender       Gender       `json:"gender"`
 	Residence    Place        `json:"residence"`
 	Summary      string       `json:"summary"`

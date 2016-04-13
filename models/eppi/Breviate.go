@@ -1,11 +1,11 @@
 package main
 
 type Breviate struct {
-	Id       uint16 `json:"id"`
+	Id       int    `json:"id"`
 	Name     string `json:"name"`
-	Keywords string `json:"name"`
-	Year     byte   `json:"name"`
-	Volume   byte   `json:"name"`
+	Keywords string `json:"keywords"`
+	Year     byte   `json:"year"`
+	Volume   byte   `json:"volume"`
 }
 
 type Breviates []Breviate

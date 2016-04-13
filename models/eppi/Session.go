@@ -1,9 +1,9 @@
 package main
 
 type Session struct {
-	Id   uint16 `json:"id"`
-	From byte   `json:"name"`
-	To   byte   `json:"name"`
+	Id   int  `json:"id"`
+	From byte `json:"from"`
+	To   byte `json:"to"`
 }
 
 type Sessions []Session

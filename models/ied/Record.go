@@ -3,11 +3,11 @@ package main
 import "time"
 
 type Record struct {
-	Id          uint16 `json:"id"`
+	Id          int    `json:"id"`
 	UUID        string `json:"uuid"`
 	Serial      string `json:"serial"`
 	Name        string `json:"name"`
-	Institution uint16 `json:"institution"`
+	Institution int    `json:"institution"`
 	Source      Source `json:"source"`
 	Category    byte   `json:"category"`
 	Date        Date   `json:"date"`

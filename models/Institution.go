@@ -1,7 +1,7 @@
 package main
 
 type Institution struct {
-	Id   uint16 `json:"id"`
+	Id   int    `json:"id"`
 	Name string `json:"name"`
 }
 
